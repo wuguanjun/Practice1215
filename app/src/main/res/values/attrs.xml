@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="borderRadius" format="dimension"/>
+    <attr name="type">
+        <enum name="circle" value="0"/>
+        <enum name="round" value="1"/>
+    </attr>
+    <attr name="src" format="reference"></attr>
+
+    <declare-styleable name="CustomImageView">
+        <attr name="borderRadius"/>
+        <attr name="type"/>
+        <attr name="src"/>
+    </declare-styleable>
+    <declare-styleable name="CalendarPickerView">
+        <attr name="android:background"/>
+        <attr name="dividerColor" format="color"/>
+        <attr name="dayBackground" format="reference"/>
+        <attr name="dayTextColor" format="color"/>
+        <attr name="calTitleTextColor" format="color"/>
+        <attr name="displayHeader" format="boolean"/>
+        <attr name="headerTextColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="calendar_cell">
+        <attr name="state_selectable" format="boolean"/>
+        <attr name="state_current_month" format="boolean"/>
+        <attr name="state_today" format="boolean"/>
+        <attr name="state_range_first" format="boolean"/>
+        <attr name="state_range_middle" format="boolean"/>
+        <attr name="state_range_last" format="boolean"/>
+        <attr name="state_highlighted" format="boolean"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension"/>
+        <attr name="border_color" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="AutoDisplayView">
+        <attr name="child_horizonial_margin" format="dimension"/>
+        <attr name="child_vertical_margin" format="dimension"/>
+    </declare-styleable>
+    <declare-styleable name="VolumCircleBar">
+        <attr name="recordingColor" format="color"/>
+        <attr name="stoppedColor" format="color"/>
+        <attr name="centerRes" format="reference"/>
+        <attr name="blockCount" format="integer"/>
+        <attr name="splitAngle" format="dimension"/>
+    </declare-styleable>
+</resources>

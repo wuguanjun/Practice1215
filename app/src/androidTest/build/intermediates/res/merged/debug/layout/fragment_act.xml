@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_fold_test"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/btn_back"
+                android:padding="8dp"
+                android:text="TextView折叠示例"
+                android:textAllCaps="false"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_scan_sd_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/btn_back"
+                android:padding="8dp"
+                android:text="浏览手机图片"
+                android:textAllCaps="false"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_simple1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/btn_back"
+                android:padding="8dp"
+                android:text="Simple1"
+                android:textAllCaps="false"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_simple2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/btn_back"
+                android:padding="8dp"
+                android:text="Simple2"
+                android:textAllCaps="false"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_simple_time_square"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/btn_back"
+                android:padding="8dp"
+                android:text="Simple Time Square"
+                android:textAllCaps="false"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

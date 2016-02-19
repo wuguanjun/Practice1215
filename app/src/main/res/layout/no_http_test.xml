@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <Button
+                android:id="@+id/btn_no_origin"
+                style="@style/nohttp_btn"
+                android:text="0.最原始的使用方法"/>
+
+            <Button
+                android:id="@+id/btn_no_self_define_request_object"
+                style="@style/nohttp_btn"
+                android:text="1.自定义请求对象"/>
+
+            <Button
+                android:id="@+id/btn_no_request_method_get"
+                style="@style/nohttp_btn"
+                android:text="2.1 请求方法--GET"/>
+
+            <Button
+                android:id="@+id/btn_no_request_method_post"
+                style="@style/nohttp_btn"
+                android:text="2.2 请求方法--POST"/>
+
+            <Button
+                android:id="@+id/btn_no_request_method_put"
+                style="@style/nohttp_btn"
+                android:text="2.3 请求方法--PUT"/>
+
+            <Button
+                android:id="@+id/btn_no_request_method_head"
+                style="@style/nohttp_btn"
+                android:text="2.4 请求方法--HEAD"/>
+
+            <Button
+                android:id="@+id/btn_no_request_method_delete"
+                style="@style/nohttp_btn"
+                android:text="2.5 请求方法--DELETE"/>
+
+            <Button
+                android:id="@+id/btn_no_request_method_options"
+                style="@style/nohttp_btn"
+                android:text="2.6 请求方法--OPTIONS"/>
+
+            <Button
+                android:id="@+id/btn_no_request_method_trace"
+                style="@style/nohttp_btn"
+                android:text="2.7 请求方法--TRACE"/>
+
+            <Button
+                android:id="@+id/btn_no_request_method_patch"
+                style="@style/nohttp_btn"
+                android:text="2.8 请求方法--PATCH"/>
+
+            <Button
+                android:id="@+id/btn_no_request_pic_get"
+                style="@style/nohttp_btn"
+                android:text="3.1 请求图片--GET"/>
+
+            <Button
+                android:id="@+id/btn_no_request_pic_post"
+                style="@style/nohttp_btn"
+                android:text="3.2 请求图片--POST"/>
+
+            <Button
+                android:id="@+id/btn_no_request_pic_put"
+                style="@style/nohttp_btn"
+                android:text="3.3 请求图片--PUT"/>
+
+            <Button
+                android:id="@+id/btn_no_request_pic_head"
+                style="@style/nohttp_btn"
+                android:text="3.4 请求图片--HEAD"/>
+
+            <Button
+                android:id="@+id/btn_no_request_pic_delete"
+                style="@style/nohttp_btn"
+                android:text="3.5 请求图片--DELETE"/>
+
+            <Button
+                android:id="@+id/btn_no_request_pic_options"
+                style="@style/nohttp_btn"
+                android:text="3.6 请求图片--OPTIONS"/>
+
+            <Button
+                android:id="@+id/btn_no_request_pic_trace"
+                style="@style/nohttp_btn"
+                android:text="3.7 请求图片--TRACE"/>
+
+            <Button
+                android:id="@+id/btn_no_request_pic_patch"
+                style="@style/nohttp_btn"
+                android:text="3.8 请求图片--PATCH"/>
+
+            <Button
+                android:id="@+id/btn_no_json_object"
+                style="@style/nohttp_btn"
+                android:text="4.1 请求JsonObject"/>
+
+            <Button
+                android:id="@+id/btn_no_json_array"
+                style="@style/nohttp_btn"
+                android:text="4.2 请求JsonArray"/>
+
+            <Button
+                android:id="@+id/btn_no_file_download"
+                style="@style/nohttp_btn"
+                android:text="5 文件下载"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

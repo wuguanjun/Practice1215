@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="color_title_back">#2c2e2a</color>
+    <color name="color_title_text">#dcd4d4</color>
+    <color name="color_title_left_text">#666666</color>
+    <color name="color_title_right_text">#666666</color>
+    <color name="color_bottom_back">#666666</color>
+    <color name="color_bottom_item_back_selected">#786363</color>
+    <color name="color_bottom_item_back_unselected">#666666</color>
+    <color name="color_btn_border">#333030</color>
+    <color name="color_btn_solid">#b9afaf</color>
+
+    <color name="grid_bg">#FFFFFFFF</color>
+    <color name="grid_border">#FFC6C6C6</color>
+
+    <color name="custom_header_text">#85B100</color>
+    <color name="custom_selected">#A8D324</color>
+    <color name="custom_background">#F0F8DB</color>
+    <color name="custom_background_today">#FF9105</color>
+    <color name="custom_background_disabled">#F0F8DB</color>
+    <color name="custom_text_selected">#FFFFFFFF</color>
+    <color name="custom_text_inactive">#7f778088</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="calendar_active_month_bg">#fff5f7f9</color>
+    <color name="calendar_bg">#ffffffff</color>
+    <color name="calendar_divider">#ffbababa</color>
+    <color name="calendar_inactive_month_bg">#ffd7d9db</color>
+    <color name="calendar_selected_day_bg">#ff379bff</color>
+    <color name="calendar_highlighted_day_bg">#ccffcc</color>
+    <color name="calendar_selected_range_bg">#ff96caff</color>
+    <color name="calendar_text_inactive">#40778088</color>
+    <color name="calendar_text_active">#ff778088</color>
+    <color name="calendar_text_selected">#ffffffff</color>
+    <color name="calendar_text_unselectable">#7f778088</color>
+
+    <color name="lay_back">#f2f2f2</color>
+
+    <color name="btn_text_pressed">#ff0000</color>
+    <color name="btn_text_unpressed">#222222</color>
+
+    <color name="lv_click_color">#77AAAAAA</color>
+    <color name="color_lv_selector">#aaeeeeee</color>
+
+
+    <color name="white">#ffffff</color>
+
+
+</resources>

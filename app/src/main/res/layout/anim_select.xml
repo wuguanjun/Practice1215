@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_ball"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ball" />
+
+    </LinearLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lay_back"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_anim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:src="@drawable/qiaoba" />
+
+            <Button
+                android:id="@+id/btn_vertival"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vertical Drop" />
+
+            <Button
+                android:id="@+id/btn_drop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Drop Line" />
+
+            <Button
+                android:id="@+id/btn_together"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Play Together" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

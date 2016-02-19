@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "E:\\As_Train\\Practice1215\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\ic_launcher.png",
+        "source": "E:\\As_Train\\Practice1215\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\As_Train\\Practice1215\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\test.jpg",
+        "source": "E:\\As_Train\\Practice1215\\app\\src\\main\\res\\mipmap-hdpi\\test.jpg"
+    },
+    {
+        "merged": "E:\\As_Train\\Practice1215\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\people.png",
+        "source": "E:\\As_Train\\Practice1215\\app\\src\\main\\res\\mipmap-hdpi\\people.png"
+    }
+]

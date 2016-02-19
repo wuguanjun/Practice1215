@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btn_read_raw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Read Raw"
+                android:textAllCaps="false"
+                />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="姓名 :"
+                        android:textSize="20sp"/>
+
+                    <EditText
+                        android:id="@+id/et_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="邮箱 :"
+                        android:textSize="20sp"/>
+
+                    <EditText
+                        android:id="@+id/et_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+                </TableRow>
+
+
+                <Button
+                    android:id="@+id/btn_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Save"
+                    android:textAllCaps="false"/>
+
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="姓名 :"
+                        android:textSize="20sp"/>
+
+                    <EditText
+                        android:id="@+id/et_read_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="邮箱 :"
+                        android:textSize="20sp"/>
+
+                    <EditText
+                        android:id="@+id/et_read_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+                </TableRow>
+
+
+                <Button
+                    android:id="@+id/btn_read"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Read"
+                    android:textAllCaps="false"/>
+            </TableLayout>
+
+            <LinearLayout
+                android:id="@+id/llt_sax_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="姓名 ："
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/et_sax_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llt_sax_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="邮箱 ："
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/et_sax_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_sax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sax"
+                android:textAllCaps="false"
+                />
+
+            <LinearLayout
+                android:id="@+id/llt_xml_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="姓名 ："
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/et_xml_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llt_xml_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="邮箱 ："
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/et_xml_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_xml"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="XML"
+                android:textAllCaps="false"
+                />
+
+            <Button
+                android:id="@+id/btn_json"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="JSON"
+                />
+
+            <Button
+                android:id="@+id/btn_json_save1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="JSON Parse"
+                />
+
+            <TextView
+                android:id="@+id/tv_json_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <Button
+                android:id="@+id/btn_json_parse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="JSON Parse"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

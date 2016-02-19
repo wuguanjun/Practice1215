@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_fold_test"
+                style="@style/fun_btn_act"
+                android:text="TextView折叠示例"/>
+
+            <Button
+                android:id="@+id/btn_scan_sd_img"
+                style="@style/fun_btn_act"
+                android:text="浏览手机图片"/>
+
+            <Button
+                android:id="@+id/btn_simple1"
+                style="@style/fun_btn_act"
+                android:text="Simple1"/>
+
+            <Button
+                android:id="@+id/btn_simple2"
+                style="@style/fun_btn_act"
+                android:text="Simple2"/>
+
+            <Button
+                android:id="@+id/btn_simple_time_square"
+                style="@style/fun_btn_act"
+                android:text="Simple Time Square"/>
+
+            <Button
+                android:id="@+id/btn_animator"
+                style="@style/fun_btn_act"
+                android:text="Property Animation"/>
+
+            <Button
+                android:id="@+id/btn_dialog"
+                style="@style/fun_btn_act"
+                android:text="Dialog Test"/>
+
+            <Button
+                android:id="@+id/btn_download_service"
+                style="@style/fun_btn_act"
+                android:text="Download Service"/>
+
+            <Button
+                android:id="@+id/btn_pop"
+                style="@style/fun_btn_act"
+                android:text="PopupWindow Test"/>
+
+            <Button
+                android:id="@+id/btn_animation"
+                style="@style/fun_btn_act"
+                android:text="Animation Test"/>
+
+            <Button
+                android:id="@+id/btn_view_test"
+                style="@style/fun_btn_act"
+                android:text="View Test"/>
+
+            <Button
+                android:id="@+id/btn_voice_record"
+                style="@style/fun_btn_act"
+                android:text="Voice Record"/>
+
+            <Button
+                android:id="@+id/btn_auto_display"
+                style="@style/fun_btn_act"
+                android:text="Auto Display"/>
+
+            <Button
+                android:id="@+id/btn_res_test"
+                style="@style/fun_btn_act"
+                android:text="Resources Operate"
+                />
+
+            <Button
+                android:id="@+id/btn_sliding_test"
+                style="@style/fun_btn_act"
+                android:text="Sliding Test"
+                />
+
+            <Button
+                android:id="@+id/btn_nohttp_test"
+                style="@style/fun_btn_act"
+                android:text="NoHttp Test"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="city">
+        <item>北京</item>
+        <item>西安</item>
+        <item>上海</item>
+        <item>深圳</item>
+        <item>广州</item>
+        <item>杭州</item>
+        <item>浙江</item>
+    </string-array>
+    <string-array name="color">
+        <item>red</item>
+        <item>orange</item>
+        <item>yellow</item>
+        <item>green</item>
+        <item>blue</item>
+        <item>gray</item>
+        <item>purple</item>
+    </string-array>
+    <string-array name="degree">
+        <item>doctor</item>
+        <item>master</item>
+        <item>university</item>
+        <item>senior</item>
+    </string-array>
+</resources>

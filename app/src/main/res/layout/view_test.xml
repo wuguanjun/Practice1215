@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:vol="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_prefer_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ball"
+                android:padding="10dp"
+                android:text="请选择您喜欢的城市："/>
+
+            <Spinner
+                android:id="@+id/sp_prefer_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/city"></Spinner>
+
+            <TextView
+                android:id="@+id/tv_prefer_color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ball"
+                android:padding="10dp"
+                android:text="请选择您喜欢的颜色："/>
+
+            <Spinner
+                android:id="@+id/sp_prefer_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                ></Spinner>
+
+            <TextView
+                android:id="@+id/tv_prefer_degree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ball"
+                android:padding="10dp"
+                android:text="请选择您喜欢的学历："/>
+
+            <Spinner
+                android:id="@+id/sp_prefer_degree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                ></Spinner>
+
+            <com.example.practice1215.view.VolumCircleBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
