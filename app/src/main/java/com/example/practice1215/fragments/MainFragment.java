@@ -19,12 +19,14 @@ import com.example.practice1215.activity.DialogTestActivity;
 import com.example.practice1215.activity.MyAnimation;
 import com.example.practice1215.activity.NoHttpTestActivity;
 import com.example.practice1215.activity.PopTestActivity;
+import com.example.practice1215.activity.PullRefreshTestActivity;
 import com.example.practice1215.activity.ResOperateTestActivity;
 import com.example.practice1215.activity.Sample1;
 import com.example.practice1215.activity.Sample2;
 import com.example.practice1215.activity.SampleTimesSquareActivity;
 import com.example.practice1215.activity.ScanSdImgActivity;
 import com.example.practice1215.activity.SlidingTestActivity;
+import com.example.practice1215.activity.TakeOrSelectPicActivity;
 import com.example.practice1215.activity.TextviewFoldActivity;
 import com.example.practice1215.activity.ViewTestActivity;
 import com.example.practice1215.activity.VoiceRecordActivity;
@@ -40,7 +42,7 @@ import java.util.List;
  */
 public class MainFragment extends Fragment implements View.OnClickListener {
     private Button btn_fold_test, btn_scan_sd_img, btn_simple1, btn_simple2, btn_simple_time_square, btn_animator,
-            btn_dialog, btn_nohttp_test, btn_download_service, btn_sliding_test, btn_pop, btn_animation, btn_view_test, btn_voice_record, btn_auto_display, btn_res_test;
+            btn_dialog, btn_refresh_view_test, btn_nohttp_test, btn_select_pic, btn_download_service, btn_sliding_test, btn_pop, btn_animation, btn_view_test, btn_voice_record, btn_auto_display, btn_res_test;
 
     BadgeView downBadge;
 
@@ -71,7 +73,11 @@ public class MainFragment extends Fragment implements View.OnClickListener {
         btn_res_test = (Button) view.findViewById(R.id.btn_res_test);
         btn_sliding_test = (Button) view.findViewById(R.id.btn_sliding_test);
         btn_nohttp_test = (Button) view.findViewById(R.id.btn_nohttp_test);
+        btn_select_pic = (Button) view.findViewById(R.id.btn_select_pic);
+        btn_refresh_view_test = (Button) view.findViewById(R.id.btn_refresh_view_test);
 
+        btn_refresh_view_test.setOnClickListener(this);
+        btn_select_pic.setOnClickListener(this);
         btn_nohttp_test.setOnClickListener(this);
         btn_scan_sd_img.setOnClickListener(this);
         btn_auto_display.setOnClickListener(this);
@@ -187,6 +193,12 @@ public class MainFragment extends Fragment implements View.OnClickListener {
                 break;
             case R.id.btn_nohttp_test:
                 getActivity().startActivity(new Intent(getActivity(), NoHttpTestActivity.class));
+                break;
+            case R.id.btn_select_pic:
+                getActivity().startActivity(new Intent(getActivity(), TakeOrSelectPicActivity.class));
+                break;
+            case R.id.btn_refresh_view_test:
+                getActivity().startActivity(new Intent(getActivity(), PullRefreshTestActivity.class));
                 break;
         }
     }

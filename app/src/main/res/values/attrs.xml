@@ -50,4 +50,7 @@
         <attr name="blockCount" format="integer"/>
         <attr name="splitAngle" format="dimension"/>
     </declare-styleable>
+    <declare-styleable name="GifView">
+        <attr name="gifRes" format="reference"/>
+    </declare-styleable>
 </resources>

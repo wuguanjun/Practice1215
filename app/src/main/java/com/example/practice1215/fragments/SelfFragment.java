@@ -8,17 +8,13 @@ import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.Toast;
 
 import com.example.practice1215.R;
 import com.example.practice1215.view.CircleImageView;
@@ -26,6 +22,8 @@ import com.example.practice1215.view.CircleImageView;
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Timer;
+import java.util.TimerTask;
 
 /**
  * Created by guanjun on 2015/12/15.
@@ -53,6 +51,13 @@ public class SelfFragment extends Fragment implements View.OnClickListener {
 
     private void initView(View view) {
         img_head = (CircleImageView) view.findViewById(R.id.img_head);
+
+        new Timer().schedule(new TimerTask() {
+            @Override
+            public void run() {
+                //更新ui用handler
+            }
+        }, 0, 1000);
 
         img_head.setOnClickListener(this);
     }

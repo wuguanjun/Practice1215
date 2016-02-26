@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.view.ViewPager;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.AutoCompleteTextView;
 import android.widget.LinearLayout;
@@ -84,7 +85,6 @@ public class MainActivity extends BaseActivity {
             }
         });
 
-//        getWindow().setWindowAnimations(R.anim.test);
     }
 
     private void initFragment() {
@@ -152,7 +152,6 @@ public class MainActivity extends BaseActivity {
     @Override
     protected void onStop() {
         super.onStop();
-
         if (mainReceiver != null) {
             unregisterReceiver(mainReceiver);
         }

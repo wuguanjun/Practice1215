@@ -90,6 +90,12 @@
         <activity
             android:name=".activity.NoHttpTestActivity"
             android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.TakeOrSelectPicActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.PullRefreshTestActivity"
+            android:screenOrientation="portrait"/>
         <!-- ATTENTION: This was auto-generated to add Google Play services to your project for
              App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
     </application>

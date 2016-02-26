@@ -47,6 +47,7 @@
 
 
     <color name="white">#ffffff</color>
+    <color name="bg_color">#ffcbc1b8</color>
 
 
 </resources>
