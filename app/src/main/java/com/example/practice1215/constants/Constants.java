@@ -6,6 +6,7 @@ import com.example.practice1215.AppConfig;
  * Created by guanjun on 2015/12/16.
  */
 public class Constants {
+    public static final boolean isDebug = true;
     public static final String SP_NAME = "Practice1215";
 
     public static final String RETURN_MAIN_FRAGMENT = "ReturnMainFragment";

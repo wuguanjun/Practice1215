@@ -15,10 +15,7 @@ import com.example.practice1215.activity.baseActivity.BaseActivity;
 import com.example.practice1215.adapter.SdImgAdapter;
 import com.example.practice1215.tools.BaseTools;
 
-import java.util.AbstractMap;
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * Created by guanjun on 2015/12/16.
@@ -71,7 +68,8 @@ public class ScanSdImgActivity extends BaseActivity {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
 
         img_dia = new ImageView(this);
-        img_dia.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+        img_dia.setLayoutParams(new ViewGroup.LayoutParams(200, ViewGroup.LayoutParams.WRAP_CONTENT));
+        img_dia.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
         builder.setView(img_dia);
         dialog = builder.create();
         dialog.show();

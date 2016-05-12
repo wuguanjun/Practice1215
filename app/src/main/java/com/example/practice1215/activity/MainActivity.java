@@ -1,13 +1,13 @@
 package com.example.practice1215.activity;
 
 import android.content.IntentFilter;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.AutoCompleteTextView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -45,6 +45,10 @@ public class MainActivity extends BaseActivity {
         setTitleRightText("");
         initFragment();
         initView();
+
+        if(ContextCompat.checkSelfPermission(this,"")!= PackageManager.PERMISSION_GRANTED){
+
+        }
     }
 
     private void initView() {

@@ -1,6 +1,7 @@
 package com.example.practice1215.activity.baseActivity;
 
-import android.app.ActivityGroup;
+import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.util.Log;
@@ -40,6 +41,9 @@ public class BaseActivity extends FragmentActivity implements View.OnClickListen
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         BaseTools.init(this);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            getWindow().setStatusBarColor(Color.parseColor("#000000"));
+        }
         resourceName = getMatcherRecourseName();
 
         setContentView(R.layout.base);

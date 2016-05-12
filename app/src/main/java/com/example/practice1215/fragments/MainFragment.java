@@ -4,6 +4,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -15,6 +16,7 @@ import android.widget.Toast;
 import com.example.practice1215.R;
 import com.example.practice1215.activity.AnimSelectActivity;
 import com.example.practice1215.activity.AutoDisplayActivity;
+import com.example.practice1215.activity.AutoViewPagerActivity;
 import com.example.practice1215.activity.DialogTestActivity;
 import com.example.practice1215.activity.MyAnimation;
 import com.example.practice1215.activity.NoHttpTestActivity;
@@ -25,6 +27,7 @@ import com.example.practice1215.activity.Sample1;
 import com.example.practice1215.activity.Sample2;
 import com.example.practice1215.activity.SampleTimesSquareActivity;
 import com.example.practice1215.activity.ScanSdImgActivity;
+import com.example.practice1215.activity.SelfDefineActivity;
 import com.example.practice1215.activity.SlidingTestActivity;
 import com.example.practice1215.activity.TakeOrSelectPicActivity;
 import com.example.practice1215.activity.TextviewFoldActivity;
@@ -42,7 +45,7 @@ import java.util.List;
  */
 public class MainFragment extends Fragment implements View.OnClickListener {
     private Button btn_fold_test, btn_scan_sd_img, btn_simple1, btn_simple2, btn_simple_time_square, btn_animator,
-            btn_dialog, btn_refresh_view_test, btn_nohttp_test, btn_select_pic, btn_download_service, btn_sliding_test, btn_pop, btn_animation, btn_view_test, btn_voice_record, btn_auto_display, btn_res_test;
+            btn_dialog,btn_self_test, btn_auto_viewpager, btn_assess, btn_refresh_view_test, btn_nohttp_test, btn_select_pic, btn_download_service, btn_sliding_test, btn_pop, btn_animation, btn_view_test, btn_voice_record, btn_auto_display, btn_res_test;
 
     BadgeView downBadge;
 
@@ -75,7 +78,12 @@ public class MainFragment extends Fragment implements View.OnClickListener {
         btn_nohttp_test = (Button) view.findViewById(R.id.btn_nohttp_test);
         btn_select_pic = (Button) view.findViewById(R.id.btn_select_pic);
         btn_refresh_view_test = (Button) view.findViewById(R.id.btn_refresh_view_test);
+        btn_assess = (Button) view.findViewById(R.id.btn_assess);
+        btn_auto_viewpager = (Button) view.findViewById(R.id.btn_auto_viewpager);
+        btn_self_test = (Button) view.findViewById(R.id.btn_self_test);
 
+        btn_assess.setOnClickListener(this);
+        btn_self_test.setOnClickListener(this);
         btn_refresh_view_test.setOnClickListener(this);
         btn_select_pic.setOnClickListener(this);
         btn_nohttp_test.setOnClickListener(this);
@@ -94,6 +102,7 @@ public class MainFragment extends Fragment implements View.OnClickListener {
         btn_voice_record.setOnClickListener(this);
         btn_res_test.setOnClickListener(this);
         btn_sliding_test.setOnClickListener(this);
+        btn_auto_viewpager.setOnClickListener(this);
         downBadge = new BadgeView(getActivity(), btn_download_service);
         downBadge.setText("12");
 //        downBadge.setBadgeBackgroundColor(Color.RED);
@@ -199,6 +208,18 @@ public class MainFragment extends Fragment implements View.OnClickListener {
                 break;
             case R.id.btn_refresh_view_test:
                 getActivity().startActivity(new Intent(getActivity(), PullRefreshTestActivity.class));
+                break;
+            case R.id.btn_assess:
+                Uri uri = Uri.parse("market://details?id=" + getActivity().getPackageName());
+                Intent intent1 = new Intent(Intent.ACTION_VIEW, uri);
+                intent1.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                getActivity().startActivity(intent1);
+                break;
+            case R.id.btn_auto_viewpager:
+                getActivity().startActivity(new Intent(getActivity(), AutoViewPagerActivity.class));
+                break;
+            case R.id.btn_self_test:
+                getActivity().startActivity(new Intent(getActivity(), SelfDefineActivity.class));
                 break;
         }
     }

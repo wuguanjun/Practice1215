@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <com.example.practice1215.view.RingView
+        android:id="@+id/rv_test"
+        android_custom:ringtextColor="#ffff00"
+        android:layout_width="200dp"
+        android:layout_height="200dp" />
+
+    <com.example.practice1215.view.RoundProgressBar
+        android:id="@+id/roundProgressBar2"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:layout_alignLeft="@+id/roundProgressBar1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="78dp"
+        android_custom:roundColor="#D1D1D1"
+        android_custom:roundProgressColor="@android:color/black"
+        android_custom:roundWidth="10dip"
+        android_custom:textColor="#9A32CD"
+        android_custom:textIsDisplayable="false"
+        android_custom:textSize="18sp" />
+
+</LinearLayout>

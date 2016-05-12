@@ -13,11 +13,10 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.practice1215.R;
 import com.example.practice1215.utils.BitmapUtils;
-import com.example.practice1215.utils.ImageLoaderUtils;
 import com.example.practice1215.utils.ImageShowManager;
-import com.squareup.picasso.Picasso;
 
 import java.io.File;
 import java.lang.ref.WeakReference;
@@ -67,8 +66,10 @@ public class SdImgAdapter extends BaseAdapter {
         convertView.setTag(holder);
 
         //1.直接用picasso加载
-        Picasso.with(context).load(new File(imgUrls.get(position))).noFade()
-                .into(holder.img);
+//        Picasso.with(context).load(new File(imgUrls.get(position))).noFade()
+//                .into(holder.img);
+        //glide
+        Glide.with(context).load(new File(imgUrls.get(position))).centerCrop().into(holder.img);
         //3.用ImageLoader加载
 //        ImageLoaderUtils.getInstance().displayFromSDCard(imgUrls.get(position), holder.img);
 //        2.本地缓存，用线程加载(失真比较严重)

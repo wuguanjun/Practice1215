@@ -105,6 +105,18 @@
                 android:id="@+id/btn_refresh_view_test"
                 style="@style/fun_btn_act"
                 android:text="Refresh View"/>
+            <Button
+                android:id="@+id/btn_assess"
+                style="@style/fun_btn_act"
+                android:text="Assess"/>
+            <Button
+                android:id="@+id/btn_auto_viewpager"
+                style="@style/fun_btn_act"
+                android:text="AutoPlayViewpager"/>
+            <Button
+                android:id="@+id/btn_self_test"
+                style="@style/fun_btn_act"
+                android:text="Self Define View"/>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
